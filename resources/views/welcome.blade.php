@@ -9,9 +9,12 @@
     <!--/inclusione assets con direttiva vite-->
 </head>
 <body>
+{{--header--}}
 <header>
     <h1 class="text-center">Train Station</h1>
 </header>
+{{--header--}}
+{{--main: list programming train--}}
 <main>
     <section class="container">
         <h2>Prossimi treni in partenza</h2>
@@ -22,5 +25,6 @@
         </ul>
     </section>
 </main>
+{{--main: list programming train--}}
 </body>
 </html>

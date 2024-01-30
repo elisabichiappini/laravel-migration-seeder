@@ -13,5 +13,5 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+// Rotta alla welcome page
 Route::get('/', [PageController::class, 'index']);
