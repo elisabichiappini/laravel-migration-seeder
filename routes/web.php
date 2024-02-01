@@ -15,3 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 // Rotta alla welcome page
 Route::get('/', [PageController::class, 'index']);
+
+// Rotta alla welcome page
+Route::get('/about', [PageController::class, 'index']);
