@@ -13,8 +13,11 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-// Rotta alla welcome page
-Route::get('/', [PageController::class, 'index']);
+// Rotta alla welcome page a cui assegno un nome 'home'
+Route::get('/', [PageController::class, 'index'])->name('home');
 
-// Rotta alla welcome page
-Route::get('/about', [PageController::class, 'index']);
+// Rotta alla trains page
+Route::get('/trains', [PageController::class, 'index'])->name('trains');
+
+// Rotta alla contact page
+Route::get('/contacts', [PageController::class, 'index'])->name('contacts');
