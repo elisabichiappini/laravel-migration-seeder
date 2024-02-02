@@ -12,9 +12,15 @@ class PageController extends Controller
 {
     public function index() {
         {
-            //treni che sono in partenza dalla data odierna statica
-            $trains = Train::where('orario_partenza', ">", '2024-01-31 00:00:00' )->get();
+            //in welcome tutti i treni
+            $trains = Train::all();
         }
         return view('welcome', compact('trains'));
+    }
+    public function contacts() {
+        {
+            //
+        }
+        return view('contacts');
     }
 }

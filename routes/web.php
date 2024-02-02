@@ -16,8 +16,5 @@ use Illuminate\Support\Facades\Route;
 // Rotta alla welcome page a cui assegno un nome 'home'
 Route::get('/', [PageController::class, 'index'])->name('home');
 
-// Rotta alla trains page
-Route::get('/trains', [PageController::class, 'index'])->name('trains');
-
 // Rotta alla contact page
-Route::get('/contacts', [PageController::class, 'index'])->name('contacts');
+Route::get('/contacts', [PageController::class, 'contacts'])->name('contacts');
