@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Guest\PageController;
+use App\Http\Controllers\Guest\TrainController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,4 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PageController::class, 'index'])->name('home');
 
 // Rotta alla contact page
-Route::get('/contacts', [PageController::class, 'contacts'])->name('contacts');
+Route::get('/contacts-milano-centrale', [PageController::class, 'contacts'])->name('contacts');
+
+// Rotta alla trains page
+Route::get('/trains-puntuali-comodi-italiani', [TrainController::class, 'index'])->name('trains');

@@ -12,15 +12,13 @@ class PageController extends Controller
 {
     public function index() {
         {
-            //in welcome tutti i treni
-            $trains = Train::all();
+            //prendi 3 treni dopo averli ordinati per n. di codice treno
+            $trains = Train::orderByDesc('codice_treno')->take(3)->get();
         }
         return view('welcome', compact('trains'));
     }
-    public function contacts() {
-        {
-            //
-        }
+    public function contacts() 
+    {
         return view('contacts');
     }
 }
