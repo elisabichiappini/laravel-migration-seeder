@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Guest;
 use App\Http\Controllers\Controller;
 use App\Models\Train;
 use Illuminate\Http\Request;
+//carbon
+use Illuminate\Support\Carbon;
 
 class PageController extends Controller
 {
